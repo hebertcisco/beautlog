@@ -30,6 +30,17 @@
 
 # Getting started
 
+## Installation
+
+```bash
+npm i beautlog
+```
+or
+## Installation
+
+```bash
+yarn add beautlog
+```
 # Usage
 ```js
 const Console = require('beautlog');
@@ -47,30 +58,39 @@ or
 ```ts
 import Console from 'beautlog';
 
-Console.trace('Trace');//change the level to use trace
+Console.WriteLine('Hello World');
+Console.trace('Trace');
 Console.success('Success');
-Console.ok('Ok');//success alias
+Console.ok('Ok');
 Console.debug('Debug');
 Console.info('Info');
 Console.warning('Warning');
-Console.warn('Warn');//warning alias
+Console.warn('Warn');
 Console.error('Error');
 ```
 or
 ```ts
-import { print, printf, log, debug } from 'beautlog';
+import { puts, print, printf, log, debug } from 'beautlog';
 
+puts('Hello World');
 print('Hello World');
 printf('Hello World');
 log('Hello World');
 debug('Hello World');
 ```
-## Installation
 
-```bash
-npm i log-beautify
+# Input usage
+```ts
+import Console, { input } from 'beautlog';
+
+const myValue = input('Insert an value:');
+
+//or:
+const mySecondValue = Console.ReadLine('Insert an second value:');
+
+//result:
+Console.Write(`${myValue} and ${mySecondValue}`);
 ```
-
 > Clone this repository: `git clone https://github.com/hebertcisco/beautlog`
 
 ### Open the directory and run the script line:
