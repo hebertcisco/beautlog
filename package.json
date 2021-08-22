@@ -1,6 +1,6 @@
 {
   "name": "beautlog",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Show log messages on your terminal with style :-) . Use debugging levels to enable or disable log messages.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hebertcisco/ts-npm-package-boilerplate.git"
+    "url": "git+https://github.com/hebertcisco/beautlog.git"
   },
   "keywords": [
     "log",
@@ -38,9 +38,9 @@
   "author": "Hebert Cisco",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hebertcisco/ts-npm-package-boilerplate/issues"
+    "url": "https://github.com/hebertcisco/beautlog/issues"
   },
-  "homepage": "https://github.com/hebertcisco/ts-npm-package-boilerplate#readme",
+  "homepage": "https://github.com/hebertcisco/beautlog#readme",
   "devDependencies": {
     "@types/jest": "^26.0.15",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
