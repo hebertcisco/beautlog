@@ -1,7 +1,7 @@
 {
-  "name": "ts-npm-package-boilerplate",
-  "version": "0.1.0",
-  "description": "TypeScript NPM Module Boilerplate",
+  "name": "beautlog",
+  "version": "0.0.7",
+  "description": "Show log messages on your terminal with style :-) . Use debugging levels to enable or disable log messages.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -21,8 +21,19 @@
     "url": "git+https://github.com/hebertcisco/ts-npm-package-boilerplate.git"
   },
   "keywords": [
-    "boilerplate",
-    "typescript"
+    "log",
+    "console.log",
+    "terminal",
+    "colors",
+    "color",
+    "logs",
+    "logger",
+    "logging",
+    "debug",
+    "cmd",
+    "powershell",
+    "command-line",
+    "messages"
   ],
   "author": "Hebert Cisco",
   "license": "MIT",
@@ -42,5 +53,10 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "log-beautify": "^1.2.0",
+    "chalk": "^3.0.0",
+    "color-regex": "^1.0.2"
+  }
 }
