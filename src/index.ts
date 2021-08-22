@@ -1,5 +1,6 @@
 import Console from './core/log';
 
+export const { input } = new Console();
 export const print = Console.info
 export const printf = Console.info
 export const log = Console.info

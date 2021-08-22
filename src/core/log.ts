@@ -29,5 +29,14 @@ class Console {
     public static error(value: any) {
         return log.error(value);
     }
+    public static WriteLine(value: any) {
+        return log.info(value);
+    }
+    public static ReadLine(value: any) {
+        return prompt(value);
+    }
+    public input(value: any) {
+        return prompt(value);
+    }
 }
 export default Console
