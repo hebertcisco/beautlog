@@ -1,7 +1,7 @@
-import Console, { print, printf, log, debug, puts } from '../index';
+import Console, { print, printf, log, debug, puts, cout } from '../index';
 
 const PHRASE = 'Hello World';
-
+const PHRASES = ['Hello World','Any'];
 it(`puts returns ${PHRASE}`, () => {
   return puts(`${PHRASE}`)
 });
@@ -21,7 +21,9 @@ it(`log returns ${PHRASE}`, () => {
 it(`debug returns ${PHRASE}`, () => {
   return debug(`${PHRASE}`)
 });
-
+it(`cout returns ${PHRASE}`, () => {
+  return cout(`${PHRASE}`)
+});
 //  Console __tests__
 it(`Console.ok returns ${PHRASE}`, () => {
   return Console.ok(`${PHRASE}`)
@@ -49,4 +51,12 @@ it(`Console.error returns ${PHRASE}`, () => {
 
 it(`Console.info returns ${PHRASE}`, () => {
   return Console.info(`${PHRASE}`)
+});
+
+it(`Console.log returns ${PHRASE}`, () => {
+  return Console.log(`${PHRASE}`)
+});
+
+it(`Console.table returns ${PHRASES}`, () => {
+  return Console.table(PHRASES)
 });
