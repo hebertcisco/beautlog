@@ -23,4 +23,5 @@ interface IConsole {
   timeStamp(label?: string): void;
   trace(...data: any[]): void;
   warn(...data: any[]): void;
+  fs_logger(data: any, path?: string);
 }

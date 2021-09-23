@@ -1,9 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import log from "log-beautify";
+import log from 'log-beautify';
 import IConsole from './log';
 
-class Console implements  IConsole{
+class Console implements IConsole {
   public static cout(...value: any[]) {
     return console.log(value);
   }
