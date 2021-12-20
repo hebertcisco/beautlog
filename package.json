@@ -1,6 +1,6 @@
 {
   "name": "beautlog",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Show log messages on your terminal with style :-) . Use debugging levels to enable or disable log messages.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
