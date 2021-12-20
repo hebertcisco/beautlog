@@ -17,6 +17,9 @@
     <a href="https://github.com/hebertcisco/beautlog">
       <img alt="GitHub Total Downloads" src="https://img.shields.io/npm/dt/beautlog?color=336791&label=Total%20downloads" />
     </a>
+  <a href="https://github.com/hebertcisco/beautlog">
+      <img alt="GitHub release" src="https://img.shields.io/github/release/hebertcisco/beautlog.svg" />
+    </a>
     <br />
     <br />
   <a href="https://github.com/hebertcisco/beautlog/issues/new/choose">Report Bug</a>
