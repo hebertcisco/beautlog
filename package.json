@@ -57,7 +57,7 @@
   "dependencies": {
     "chalk": "^5.0.0",
     "color-regex": "^1.0.2",
-    "date-handle": "^0.0.1",
+    "date-handle": "^0.0.2",
     "log-beautify": "^1.2.0"
   }
 }
