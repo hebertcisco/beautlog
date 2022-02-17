@@ -1,5 +1,5 @@
 import { LogLevel, TLogValue } from './log-level';
-import chalk from 'chalk';
+import { blue, red, green, white, yellow } from 'colorette';
 
 export const output = console;
 const input = process.stdin;
@@ -15,13 +15,13 @@ class Console implements LogLevel {
     output.table(value);
   }
   public static show(...value: TLogValue) {
-    output.log(chalk.blue(value));
+    output.log(blue(value));
   }
   public static trace(...value: TLogValue) {
-    output.log(chalk.white(value));
+    output.log(white(value));
   }
   public static success(...value: TLogValue) {
-    output.log(chalk.green(value));
+    output.log(green(value));
   }
   public static ok(...value: TLogValue) {
     Console.success(value);
@@ -32,16 +32,16 @@ class Console implements LogLevel {
   }
 
   public static info(...value: TLogValue) {
-    output.log(chalk.blue(value));
+    output.log(blue(value));
   }
   public static warning(...value: TLogValue) {
-    output.log(chalk.yellow(value));
+    output.log(yellow(value));
   }
   public static warn(...value: TLogValue) {
-    output.log(chalk.yellow(value));
+    output.log(yellow(value));
   }
   public static error(...value: TLogValue) {
-    output.error(chalk.red(value));
+    output.error(red(value));
   }
   public static WriteLine(...value: TLogValue) {
     output.log(value);
