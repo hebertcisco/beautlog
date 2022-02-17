@@ -1,4 +1,5 @@
 import { LogLevel, TLogValue } from './log-level';
+import chalk from 'chalk';
 
 export const output = console;
 const input = process.stdin;
@@ -14,33 +15,33 @@ class Console implements LogLevel {
     output.table(value);
   }
   public static show(...value: TLogValue) {
-    output.log(value);
+    output.log(chalk.blue(value));
   }
   public static trace(...value: TLogValue) {
-    output.log(value);
+    output.log(chalk.white(value));
   }
   public static success(...value: TLogValue) {
-    output.log(value);
+    output.log(chalk.green(value));
   }
   public static ok(...value: TLogValue) {
-    output.log(value);
+    Console.success(value);
   }
 
   public static debug(...value: TLogValue) {
-    output.log(value);
+    output.debug(value);
   }
 
   public static info(...value: TLogValue) {
-    output.log(value);
+    output.log(chalk.blue(value));
   }
   public static warning(...value: TLogValue) {
-    output.log(value);
+    output.log(chalk.yellow(value));
   }
   public static warn(...value: TLogValue) {
-    output.log(value);
+    output.log(chalk.yellow(value));
   }
   public static error(...value: TLogValue) {
-    output.error(value);
+    output.error(chalk.red(value));
   }
   public static WriteLine(...value: TLogValue) {
     output.log(value);
@@ -55,7 +56,7 @@ class Console implements LogLevel {
     input.read(value);
   }
   public static prompt(value: TLogValue) {
-     input.read(value);
+    input.read(value);
   }
   public input(value: TLogValue) {
     input.read(value);
