@@ -12,7 +12,5 @@ export const cout = Console.cout;
 export * as logger from './core/log';
 export * as bl from './core/log';
 export * as beautlog from './core/log';
-export * as Logging from './core/logging';
-export * as fs_logger from './core/fs_logger';
 
 export default Console;

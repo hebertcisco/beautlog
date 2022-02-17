@@ -1,58 +1,70 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import log from 'log-beautify';
-import IConsole from './log';
+import { LogLevel, TLogValue } from './log-level';
 
-class Console implements IConsole {
-  public static cout(...value: any[]) {
-    return console.log(value);
-  }
-  public static log(...value: any[]) {
-    return console.log(value);
-  }
-  public static table(...value: any[]) {
-    return console.table(value);
-  }
-  public static show(...value: any[]) {
-    return log.show(value);
-  }
-  public static trace(...value: any[]) {
-    return log.trace(value);
-  }
-  public static success(...value: any[]) {
-    return log.success(value);
-  }
-  public static ok(...value: any[]) {
-    return log.ok(value);
-  }
+export const output = console;
+const input = process.stdin;
 
-  public static debug(...value: any[]) {
-    return log.debug(value);
+class Console implements LogLevel {
+  public static cout(...value: TLogValue) {
+    output.log(value);
+  }
+  public static log(...value: TLogValue) {
+    output.log(value);
+  }
+  public static table(...value: TLogValue) {
+    output.table(value);
+  }
+  public static show(...value: TLogValue) {
+    output.log(value);
+  }
+  public static trace(...value: TLogValue) {
+    output.log(value);
+  }
+  public static success(...value: TLogValue) {
+    output.log(value);
+  }
+  public static ok(...value: TLogValue) {
+    output.log(value);
   }
 
-  public static info(...value: any[]) {
-    return log.info(value);
+  public static debug(...value: TLogValue) {
+    output.log(value);
   }
-  public static warning(...value: any[]) {
-    return log.warning(value);
+
+  public static info(...value: TLogValue) {
+    output.log(value);
   }
-  public static warn(...value: any[]) {
-    return log.warn(value);
+  public static warning(...value: TLogValue) {
+    output.log(value);
   }
-  public static error(...value: any[]) {
-    return log.error(value);
+  public static warn(...value: TLogValue) {
+    output.log(value);
   }
-  public static WriteLine(...value: any[]) {
-    return log.debug(value);
+  public static error(...value: TLogValue) {
+    output.error(value);
   }
-  public static Write(...value: any[]) {
-    return log.debug(value);
+  public static WriteLine(...value: TLogValue) {
+    output.log(value);
   }
-  public static ReadLine(value: any | any[]) {
-    return prompt(value);
+  public static Write(...value: TLogValue) {
+    output.log(value);
   }
-  public input(value: any | any[]) {
-    return prompt(value);
+  public static ReadLine(value: TLogValue) {
+    input.read(value);
+  }
+  public static Read(value: TLogValue) {
+    input.read(value);
+  }
+  public static prompt(value: TLogValue) {
+     input.read(value);
+  }
+  public input(value: TLogValue) {
+    input.read(value);
+  }
+  public static printf(...value: TLogValue) {
+    output.log(value);
+  }
+  public static logf(...value: TLogValue) {
+    output.log(value);
   }
 }
 export default Console;
