@@ -1,6 +1,6 @@
 {
   "name": "beautlog",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Show log messages on your terminal with style :-) . Use debugging levels to enable or disable log messages.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -43,7 +43,6 @@
   },
   "homepage": "https://github.com/hebertcisco/beautlog#readme",
   "devDependencies": {
-    "@types/chalk": "2.2.0",
     "@types/jest": "27.4.0",
     "@typescript-eslint/eslint-plugin": "5.12.0",
     "@typescript-eslint/parser": "5.12.0",
@@ -58,7 +57,6 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "chalk": "^5.0.0",
     "colorette": "^2.0.16"
   }
 }
