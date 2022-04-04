@@ -44,8 +44,8 @@
   "homepage": "https://github.com/hebertcisco/beautlog#readme",
   "devDependencies": {
     "@types/jest": "27.4.1",
-    "@typescript-eslint/eslint-plugin": "5.12.1",
-    "@typescript-eslint/parser": "5.12.1",
+    "@typescript-eslint/eslint-plugin": "5.18.0",
+    "@typescript-eslint/parser": "5.18.0",
     "eslint": "8.11.0",
     "eslint-plugin-jest": "26.1.1",
     "jest": "27.5.1",
