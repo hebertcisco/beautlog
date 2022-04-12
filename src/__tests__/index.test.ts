@@ -1,62 +1,72 @@
-import Console, { print, printf, log, debug, puts, cout } from '../index';
+import Console from '../index';
+import { puts } from '../index';
+import { print } from '../index';
+import { printf } from '../index';
+import { debug } from '../index';
+import { cout } from '../index';
+import { log } from '../index';
 
 const PHRASE = 'Hello World';
 const PHRASES = ['Hello World', 'Any'];
-it(`puts returns ${PHRASE}`, () => {
-  return puts(`${PHRASE}`);
-});
 
-it(`print returns ${PHRASE}`, () => {
-  return print(`${PHRASE}`);
-});
+describe('should print', () => {
+  it(`puts returns ${PHRASE}`, () => {
+    expect(puts(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`printf returns ${PHRASE}`, () => {
-  return printf(`${PHRASE}`);
-});
+  it(`print returns ${PHRASE}`, () => {
+    expect(print(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`log returns ${PHRASE}`, () => {
-  return log(`${PHRASE}`);
-});
+  it(`should printf returns ${PHRASE}`, () => {
+    expect(printf(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`debug returns ${PHRASE}`, () => {
-  return debug(`${PHRASE}`);
-});
-it(`cout returns ${PHRASE}`, () => {
-  return cout(`${PHRASE}`);
-});
-//  Console __tests__
-it(`Console.ok returns ${PHRASE}`, () => {
-  return Console.ok(`${PHRASE}`);
-});
+  it(`should log returns ${PHRASE}`, () => {
+    expect(log(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`Console.success returns ${PHRASE}`, () => {
-  return Console.success(`${PHRASE}`);
+  it(`debug returns ${PHRASE}`, () => {
+    expect(debug(`${PHRASE}`)).toBe(void 0);
+  });
+  it(`cout returns ${PHRASE}`, () => {
+    expect(cout(`${PHRASE}`)).toBe(void 0);
+  });
 });
+describe('should Console logs', () => {
+  it(`Console.ok returns ${PHRASE}`, () => {
+    expect(Console.ok(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`Console.trace returns ${PHRASE}`, () => {
-  return Console.trace(`${PHRASE}`);
-});
+  it(`Console.success returns ${PHRASE}`, () => {
+    expect(Console.success(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`Console.warn returns ${PHRASE}`, () => {
-  return Console.warn(`${PHRASE}`);
-});
+  it(`Console.trace returns ${PHRASE}`, () => {
+    expect(Console.trace(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`Console.warning returns ${PHRASE}`, () => {
-  return Console.warning(`${PHRASE}`);
-});
+  it(`Console.warn returns ${PHRASE}`, () => {
+    expect(puts(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`Console.error returns ${PHRASE}`, () => {
-  return Console.error(`${PHRASE}`);
-});
+  it(`Console.warning returns ${PHRASE}`, () => {
+    expect(Console.warn(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`Console.info returns ${PHRASE}`, () => {
-  return Console.info(`${PHRASE}`);
-});
+  it(`Console.error returns ${PHRASE}`, () => {
+    expect(Console.error(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`Console.log returns ${PHRASE}`, () => {
-  return Console.log(`${PHRASE}`);
-});
+  it(`Console.info returns ${PHRASE}`, () => {
+    expect(Console.info(`${PHRASE}`)).toBe(void 0);
+  });
 
-it(`Console.table returns ${PHRASES}`, () => {
-  return Console.table(PHRASES);
+  it(`Console.log returns ${PHRASE}`, () => {
+    expect(Console.log(`${PHRASE}`)).toBe(void 0);
+  });
+
+  it(`Console.table returns ${PHRASES}`, () => {
+    expect(Console.table(`${PHRASE}`)).toBe(void 0);
+  });
 });
