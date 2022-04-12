@@ -1,15 +1,17 @@
 {
   "name": "beautlog",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Show log messages on your terminal with style :-) . Use debugging levels to enable or disable log messages.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "prebuild": "npm install",
     "format": "prettier --write \"src/**/*.(js|ts)\"",
     "lint": "eslint src --ext .js,.ts",
     "lint:fix": "eslint src --fix --ext .js,.ts",
     "test": "jest --config jest.config.js",
+    "pretest": "nnpm run prepare",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
