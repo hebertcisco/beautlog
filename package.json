@@ -10,7 +10,9 @@
     "lint": "npx eslint src --ext .js,.ts",
     "lint:fix": "npx eslint src --fix --ext .js,.ts",
     "test": "npx jest --config jest.config.js",
-    "prepare": "npx npm run build",
+    "test:cov": "npm test -- --coverage",
+    "test:watch": "npm test -- --watch",
+    "prepare": "npx husky install",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
@@ -19,6 +21,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hebertcisco/beautlog.git"
+  },
+  "engines": {
+    "node": ">=14.20.1",
+    "npm": ">=6.14.17"
   },
   "keywords": [
     "log",
@@ -47,6 +53,7 @@
     "@typescript-eslint/parser": "5.60.1",
     "eslint": "8.44.0",
     "eslint-plugin-jest": "27.2.2",
+    "husky": "^8.0.3",
     "jest": "^29.5.0",
     "prettier": "2.8.8",
     "ts-jest": "29.1.1",
