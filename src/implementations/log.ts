@@ -1,6 +1,6 @@
 import { blue, red, green, white, yellow } from 'colorette';
 
-class Console  {
+class Console {
   public static cout(message?: any, ...optionalParams: any[]) {
     Console._log(console.log, message, optionalParams);
   }
@@ -44,11 +44,11 @@ class Console  {
     Console._log(console.log, message, optionalParams);
   }
 
-  private static _log(fn: Function, message?: any, ...optionalParams: any[]) {
+  private static _log(fn: any, message?: any, ...optionalParams: any[]) {
     if (optionalParams?.length !== 0) {
       fn(message, optionalParams);
     } else {
-        fn(message);
+      fn(message);
     }
   }
 }
