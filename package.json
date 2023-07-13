@@ -48,7 +48,7 @@
   },
   "homepage": "https://github.com/hebertcisco/beautlog#readme",
   "devDependencies": {
-    "@types/jest": "29.5.2",
+    "@types/jest": "29.5.3",
     "@typescript-eslint/eslint-plugin": "5.60.1",
     "@typescript-eslint/parser": "5.60.1",
     "eslint": "8.44.0",
