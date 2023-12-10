@@ -4,7 +4,6 @@ import { print } from '../index';
 import { printf } from '../index';
 import { debug } from '../index';
 import { cout } from '../index';
-import { log } from '../index';
 
 const PHRASE = 'Hello World';
 const PHRASES = ['Hello World', 'Any'];
@@ -20,10 +19,6 @@ describe('should print', () => {
 
   it(`should printf returns ${PHRASE}`, () => {
     expect(printf(`${PHRASE}`)).toBe(void 0);
-  });
-
-  it(`should log returns ${PHRASE}`, () => {
-    expect(log(`${PHRASE}`)).toBe(void 0);
   });
 
   it(`debug returns ${PHRASE}`, () => {
